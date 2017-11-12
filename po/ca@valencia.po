@@ -1,94 +1,102 @@
-# Slovenian translation for gnome-characters.
-# Copyright (C) 2015 gnome-characters's COPYRIGHT HOLDER
-# This file is distributed under the same license as the gnome-characters package.
 #
-# Matej Urbančič <mateju@svn.gnome.org>, + 2015–2017.
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Traducció al català del  gnome-characters
+#
+# Jordi Mas i Hernàndez <jmas@softcatala.org>, 2015
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-characters master\n"
+"Project-Id-Version: gnome-characters\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=gnome-"
 "characters&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2017-09-13 12:09+0200\n"
-"PO-Revision-Date: 2017-10-15 22:45+0200\n"
-"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
-"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
-"Language: sl_SI\n"
+"POT-Creation-Date: 2017-09-08 08:34+0000\n"
+"PO-Revision-Date: 2017-09-01 18:22+0200\n"
+"Last-Translator: Xavi Ivars <xavi.ivars@gmail.com>\n"
+"Language-Team: \n"
+"Language: ca-valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
-"%100==4 ? 3 : 0);\n"
-"X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Poedit 2.0.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: data/app-menu.ui:6
 msgid "About"
-msgstr "O programu"
+msgstr "Quant a"
 
 #: data/app-menu.ui:10
 msgid "Quit"
-msgstr "Končaj"
+msgstr "Ix"
 
 #: data/characterlist.ui:30
 msgid "Search found no results"
-msgstr "Ni zadetkov"
+msgstr "La busca no ha donat resultats"
 
 #: data/characterlist.ui:41
 msgid "Try a different search."
-msgstr "Poskusite z drugačnim iskanjem."
+msgstr "Proveu una busca diferent. "
 
 #: data/characterlist.ui:73
 msgid "Loading…"
-msgstr "Poteka nalaganje ..."
+msgstr "S'està carregant..."
 
 #: data/character.ui:68
 msgid "Copy Character"
-msgstr "Kopiraj znak"
+msgstr "Copia caràcter"
 
 #: data/character.ui:86
 msgid "Character copied to clipboard"
-msgstr "Znak je kopiran v odložišče"
+msgstr "El caràcter s'ha copiat al porta-retalls"
 
 #: data/mainview.ui:30
 msgid "No recent characters found"
-msgstr "Ni nedavno izbranih znakov"
+msgstr "No s'han trobat caràcters recents"
 
 #: data/mainview.ui:41
 msgid "Characters will appear here if you use them."
-msgstr "V tem oknu bodo pokazani vsi uporabljeni znaki."
+msgstr "Els caràcters apareixen ací si els utilitzeu."
 
 #: data/mainwindow.ui:12
 msgid "Current page"
-msgstr "Trenutna stran"
+msgstr "Pàgina actual"
 
 #: data/menu.ui:17
 msgid "Filter by Font"
-msgstr "Filter pisav"
+msgstr "Filtra per tipus de lletra"
 
 #: data/org.gnome.Characters.appdata.xml.in:4 src/window.js:200
 msgid "GNOME Characters"
-msgstr "Znaki GNOME"
+msgstr "Caràcters del GNOME"
 
 #: data/org.gnome.Characters.appdata.xml.in:5
 msgid "Character map application"
-msgstr "Program za prikaz znakov pisav"
+msgstr "Aplicació per mostrar caràcters"
 
 #: data/org.gnome.Characters.appdata.xml.in:9
-msgid "Characters is a simple utility application to find and insert unusual characters. It allows you to quickly find the character you are looking for by searching for keywords."
-msgstr "Program Znaki je enostaven program za iskanje in vstavljanje neobičajnih znakov v besedilo. Omogoča hitro iskanje s ključnimi opisnimi besedami."
+msgid ""
+"Characters is a simple utility application to find and insert unusual "
+"characters. It allows you to quickly find the character you are looking for "
+"by searching for keywords."
+msgstr ""
+"Caràcters és una aplicació per buscar i inserir caràcters inusuals. Vos "
+"permet trobar ràpidament els caràcters que esteu cercant usant paraules clau."
 
 #: data/org.gnome.Characters.appdata.xml.in:12
-msgid "You can also browse characters by categories, such as Punctuation, Pictures, etc."
-msgstr "Kategorije, kot so Znaki, Ločila, Sličice in podobno, je mogoče tudi prebrskati."
+msgid ""
+"You can also browse characters by categories, such as Punctuation, Pictures, "
+"etc."
+msgstr ""
+"També podeu navegar els caràcters per categories, com ara puntuació, "
+"imatges, etc. "
 
 #: data/org.gnome.Characters.desktop.in:4 src/service.js:51
 msgid "Characters"
-msgstr "Znaki"
+msgstr "Caràcters"
 
 #: data/org.gnome.Characters.desktop.in:5
 msgid "Utility application to find and insert unusual characters"
-msgstr "Program za iskanje in vstavljanje neobičajnih znakov"
+msgstr "Una aplicació per buscar i inserir caràcters inusuals"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Characters.desktop.in:7
@@ -98,136 +106,137 @@ msgstr "gnome-characters"
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Characters.desktop.in:13
 msgid "characters;unicode;punctuation;math;letters;emoji;emoticon;"
-msgstr "znaki;unikod;unicode;matematika;ločila;črke;emotikoni;izrazne ikone;emoji"
+msgstr "caràcters;unicode;puntuació;mates;lletres;emoji;emoticona;"
 
 #: data/org.gnome.Characters.gschema.xml:5
 msgid "Font to display characters"
-msgstr "Pisava, uporabljena za prikaz znakov"
+msgstr "Tipus de lletra per a mostrar caràcters"
 
 #: data/org.gnome.Characters.gschema.xml:6
 msgid "Use the font to render characters on the character list."
-msgstr "Pisava, ki je uporabljena za izris znakov pisave."
+msgstr ""
+"Usa el tipus de lletra per mostrar els caràcters en la llista de caràcters."
 
 #: data/org.gnome.Characters.gschema.xml:15
 msgid "Maximum recent characters"
-msgstr "Največje število nedavno uporabljenih znakov"
+msgstr "Màxim de caràcters recents"
 
 #: src/categoryList.js:33
 msgid "Emojis"
-msgstr "Izrazne ikone"
+msgstr "Emojis"
 
 #: src/categoryList.js:40 src/categoryList.js:390
 msgid "Letters & Symbols"
-msgstr "Črke in Simboli"
+msgstr "Lletres i símbols"
 
 #: src/categoryList.js:50
 msgid "Punctuation"
-msgstr "Ločila"
+msgstr "Puntuació"
 
 #: src/categoryList.js:57
 msgid "Arrows"
-msgstr "Puščice"
+msgstr "Fletxes"
 
 #: src/categoryList.js:64
 msgid "Bullets"
-msgstr "Vrstične oznake"
+msgstr "Pics"
 
 #: src/categoryList.js:71
 msgid "Pictures"
-msgstr "Sličice"
+msgstr "Imatges"
 
 #: src/categoryList.js:78
 msgid "Currencies"
-msgstr "Denarne enote"
+msgstr "Monedes"
 
 #: src/categoryList.js:85
 msgid "Math"
-msgstr "Matematični znaki"
+msgstr "Matemàtiques"
 
 #: src/categoryList.js:92
 msgid "Letters"
-msgstr "Črke"
+msgstr "Lletres"
 
 #: src/categoryList.js:102
 msgid "Smileys & People"
-msgstr "Izrazi in Ljudje"
+msgstr "Emoticones i persones"
 
 #: src/categoryList.js:109
 msgid "Animals & Nature"
-msgstr "Živali in Narava"
+msgstr "Animals i natura"
 
 #: src/categoryList.js:116
 msgid "Food & Drink"
-msgstr "Hrana in Pijača"
+msgstr "Menjar i beure"
 
 #: src/categoryList.js:123
 msgid "Activities"
-msgstr "Dejavnosti"
+msgstr "Activitats"
 
 #: src/categoryList.js:130
 msgid "Travel & Places"
-msgstr "Potovanja in Mesta"
+msgstr "Viatges i llocs"
 
 #: src/categoryList.js:137
 msgid "Objects"
-msgstr "Predmeti"
+msgstr "Objectes"
 
 #: src/categoryList.js:144
 msgid "Symbols"
-msgstr "Simboli"
+msgstr "Símbols"
 
 #: src/categoryList.js:151
 msgid "Flags"
-msgstr "Zastavice"
+msgstr "Banderes"
 
 #: src/categoryList.js:166
 #, javascript-format
 msgid "%s Category List Row"
-msgstr "Vrstica seznama kategorije %s"
+msgstr "%s fila de la llista de categories"
 
 #. FIXME: Can't use GtkContainer.child_get_property.
 #: src/categoryList.js:378 src/window.js:373
 msgid "Recently Used"
-msgstr "Nedavno uporabljeno"
+msgstr "Utilitzats recentment"
 
 #: src/character.js:56
 msgid "See Also"
-msgstr "Poglejte tudi"
+msgstr "Vegeu també"
 
 #: src/character.js:122 src/character.js:144
 #, javascript-format
 msgid "Unicode U+%04s"
-msgstr "Unikod U+%04s"
+msgstr "Unicode U+%04s"
 
 #. TRANSLATORS: the first variable is a character, the second is a font
 #: src/character.js:140
 #, javascript-format
 msgid "%s is not included in %s"
-msgstr "Znak %s ni vključen v %s"
+msgstr "%s no està inclòs a %s"
 
 #: src/characterList.js:178
 msgid "Unassigned"
-msgstr "Nedodeljeno"
+msgstr "No assignat"
 
 #: src/main.js:58
 msgid "Characters Application"
-msgstr "Program Znaki"
+msgstr "Aplicació Caràcters"
 
 #: src/main.js:95
 msgid "Characters Application started"
-msgstr "Program Znaki je zagnan"
+msgstr "S'ha iniciat l'aplicació Caràcters"
 
 #: src/main.js:103
 msgid "Characters Application exiting"
-msgstr "Program Znaki se končuje"
+msgstr "S'està eixint de l'aplicació Caràcters"
 
 #: src/menu.js:50
 msgid "None"
-msgstr "Brez"
+msgstr "Cap"
 
 #: src/searchProvider.js:95
 msgid "Unknown character name"
-msgstr "Neznano ime znaka"
+msgstr "Nom de caràcter desconegut"
 
 #: src/searchProvider.js:98
 #, javascript-format
@@ -237,57 +246,48 @@ msgstr "U+%s, %s: %s"
 #. TRANSLATORS: put your names here, one name per line.
 #: src/window.js:199
 msgid "translator-credits"
-msgstr "Matej Urbančič <matej.urban@svn.gnome.org>"
+msgstr "Jordi Mas i Hernàndez <jmas@softcatala.org>, 2015"
 
 #: src/window.js:201
 msgid "Character Map"
-msgstr "Nabor znakov"
+msgstr "Mapa de caràcters"
 
 #: src/window.js:221
 #, javascript-format
 msgid "%s (%s only)"
-msgstr "%s (le %s)"
+msgstr "%s (%s només)"
 
 #: src/window.js:350
 #, javascript-format
 msgid "%s Character List"
-msgstr "Seznam znakov %s"
+msgstr "%s llista de caràcters"
 
 #. TRANSLATORS: %s will be either 'emojis' or 'letters'
 #: src/window.js:358
 #, javascript-format
 msgid "Recently Used %s Character List"
-msgstr "Nedavno uporabljen seznam znakov %s"
+msgstr "%s llista de caràcters utilitzats recentment"
 
 #: src/window.js:377
 msgid "Search Result Character List"
-msgstr "Seznam rezultatov iskanja znakov"
+msgstr "Busca el resultat a la llista de caràcters"
 
 #. FIXME: Can't use GtkContainer.child_get_property.
 #: src/window.js:379
 msgid "Search Result"
-msgstr "Zadetki iskanja"
+msgstr "Resultat de la busca"
 
 #~ msgid "Emoticons"
-#~ msgstr "Izrazne ikone"
-
-#~ msgid "Search produced empty result"
-#~ msgstr "Ni zadetkov"
-
-#~ msgid "Try another search criteria."
-#~ msgstr "Poskusite nov niz za iskanje"
+#~ msgstr "Emoticones"
 
 #~ msgid "About Characters"
-#~ msgstr "O programu"
+#~ msgstr "Quant al Caràcters"
 
-#~ msgid "Filter by font"
-#~ msgstr "Filtriraj po pisavi"
+#~ msgid "Try another search criteria."
+#~ msgstr "Proveu un altre criteri de cerca."
 
 #~ msgid "characters;unicode;"
-#~ msgstr "znaki;unikod;Unicode;nabor;"
-
-#~ msgid "Loading..."
-#~ msgstr "Poteka nalaganje ..."
+#~ msgstr "caràcters;unicode;"
 
 #~ msgid "Latin"
-#~ msgstr "latinski"
+#~ msgstr "Llatí"

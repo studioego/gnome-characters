@@ -174,11 +174,10 @@ var MainWindow = new Lang.Class({
         let keywords = text == '' ? [] : text.split(/\s+/);
         keywords = keywords.map(String.toUpperCase);
         if (keywords != this._searchKeywords) {
+            this._mainView.cancelSearch();
             this._searchKeywords = keywords;
             if (this._searchKeywords.length > 0)
                 this._mainView.searchByKeywords(this._searchKeywords);
-            else
-                this._mainView.cancelSearch();
         }
         return true;
     },
@@ -419,7 +418,8 @@ const MainView = new Lang.Class({
     },
 
     cancelSearch: function() {
-        this.visible_child.cancelSearch();
+        let characterList = this.get_child_by_name('search-result');
+        characterList.cancelSearch();
     },
 
     setPage: function(category) {
