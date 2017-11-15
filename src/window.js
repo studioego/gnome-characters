@@ -193,7 +193,8 @@ var MainWindow = new Lang.Class({
             { artists: [ 'Allan Day <allanpday@gmail.com>',
                          'Jakub Steiner <jimmac@gmail.com>' ],
               authors: [ 'Daiki Ueno <dueno@src.gnome.org>',
-                         'Giovanni Campagna <scampa.giovanni@gmail.com>' ],
+                         'Giovanni Campagna <scampa.giovanni@gmail.com>',
+                         'DaeHyun Sung <sungdh86@gmail.com>' ],
               // TRANSLATORS: put your names here, one name per line.
               translator_credits: _("translator-credits"),
               program_name: _("GNOME Characters"),
