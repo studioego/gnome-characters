@@ -851,10 +851,21 @@ populate_related_characters (GcCharacterIter *iter)
           decomposition_base = decomposition[0];
           if (decomposition_base != iter->uc)
             g_array_append_val (result, decomposition_base);
-        }
+	  if (decomposition_length > 0 )
+	    {
+	      decomposition_base = decomposition[1];
+              if (decomposition_base != iter->uc)
+                g_array_append_val (result, decomposition_base);
+	      if (decomposition_length > 1)
+	        {
+	          decomposition_base = decomposition[2];
+                  if (decomposition_base != iter->uc)
+                    g_array_append_val (result, decomposition_base);
+	        }
+            }
+	}
       else
         decomposition_base = iter->uc;
-
       script = uc_script (iter->uc);
       if (script)
         {
