@@ -1,7 +1,6 @@
 /* Canonical decomposition of Unicode characters.
    Copyright (C) 2009-2017 Free Software Foundation, Inc.
    Written by Bruno Haible <bruno@clisp.org>, 2009.
-   Modified by DaeHyun Sung <sungdh86@gmail.com>, 2017.
 
    This program is free software: you can redistribute it and/or modify it
    under the terms of the GNU General Public License as published
@@ -31,7 +30,9 @@ uc_canonical_decomposition (ucs4_t uc, ucs4_t *decomposition)
   if (uc >= 0xAC00 && uc < 0xD7A4)
     {
       /* Hangul syllable.  See Unicode standard, chapter 3, section
-         "Hangul Syllable Decomposition"*/
+         "Hangul Syllable Decomposition",  See also the clarification at
+         <http://www.unicode.org/versions/Unicode5.1.0/>, section
+         "Clarification of Hangul Jamo Handling".  */
       unsigned int t;
 
       uc -= 0xAC00;
@@ -51,6 +52,11 @@ uc_canonical_decomposition (ucs4_t uc, ucs4_t *decomposition)
         }
       else
         {
+#if 1 /* Return the pairwise decomposition, not the full decomposition.  */
+          decomposition[0] = 0xAC00 + uc - t; /* = 0xAC00 + (l * 21 + v) * 28; */
+          decomposition[1] = 0x11A7 + t;
+          return 2;
+#else
           unsigned int v, l;
 
           uc = uc / 28;
@@ -61,6 +67,7 @@ uc_canonical_decomposition (ucs4_t uc, ucs4_t *decomposition)
           decomposition[1] = 0x1161 + v;
           decomposition[2] = 0x11A7 + t;
           return 3;
+#endif
         }
     }
   else if (uc < 0x110000)

@@ -848,18 +848,46 @@ populate_related_characters (GcCharacterIter *iter)
         uc_canonical_decomposition (iter->uc, decomposition);
       if (decomposition_length > 0)
         {
-          decomposition_base = decomposition[0];
-          if (decomposition_base != iter->uc)
-            g_array_append_val (result, decomposition_base);
-	  decomposition_base = decomposition[1];
-          if (decomposition_base != iter->uc)
-            g_array_append_val (result, decomposition_base);
-          decomposition_base = decomposition[2];
-          if (decomposition_base != iter->uc)
-            g_array_append_val (result, decomposition_base);
-	}
+		script = uc_script (iter->uc);
+		if (script)
+			{
+				if (strcmp(script->name , "Hangul") == 0 )
+					{
+						if (decomposition_length > 0)
+							{
+								decomposition_base = decomposition[1];
+			  				if (decomposition_base != iter->uc)
+				     		   g_array_append_val (result, decomposition_base);
+							}
+						else
+							{
+								decomposition_base = decomposition[0];
+			            		if (decomposition_base != iter->uc)
+				  	           	g_array_append_val (result, decomposition_base);
+							}
+			      for ( int decomp_temp = 0; decomp_temp < decomposition_length; decomp_temp++)
+				  		{
+							int recursive_decomposition_length = uc_canonical_decomposition (decomposition[decomp_temp], decomposition);
+							decomposition_base = decomposition[0];
+						    if (decomposition_base != iter->uc)
+								g_array_append_val (result, decomposition_base);
+							if (recursive_decomposition_length > 0 )
+								{
+									decomposition_base = decomposition[1];
+			   	 		    if (decomposition_base != iter->uc)
+			   	      		   g_array_append_val (result, decomposition_base);
+								}
+						}
+					}
+				else
+					decomposition_base = decomposition[0];
+				   if (decomposition_base != iter->uc)
+					   g_array_append_val (result, decomposition_base);
+					}
+        }
       else
         decomposition_base = iter->uc;
+
       script = uc_script (iter->uc);
       if (script)
         {
